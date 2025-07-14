@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "pkgder",
   description: "find your next favorite npm package",
   openGraph: { images: "/banner.png" },
-  twitter: { card: "summary" },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = { themeColor: "#0A0A0A" };
