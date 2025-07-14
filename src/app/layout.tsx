@@ -1,5 +1,5 @@
 import "./globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist_Mono } from "next/font/google";
 import { Toaster } from "~/components/ui/sonner";
 import { PackagesProvider } from "~/contexts/PackagesContext";
@@ -12,7 +12,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "pkgder",
   description: "find your next favorite npm package",
+  openGraph: { images: "/banner.png" },
+  twitter: { card: "summary" },
 };
+
+export const viewport: Viewport = { themeColor: "#0A0A0A" };
 
 export default function RootLayout({
   children,
